@@ -1,0 +1,17 @@
+body{
+  background-color: red;
+  @include phone{
+    background-color: yellow;
+  };
+  .border{
+    border: 1px solid black;
+  }
+
+  .center{
+    width: 1024px;
+    @include phone{
+      width: 100%;
+    }
+    margin: 0 auto;
+  }
+}

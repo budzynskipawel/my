@@ -1,0 +1,50 @@
+.gallery {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+    display: inline-block;
+    width: 16%;
+    @include tablet {
+      width: 30%;
+    }
+    @include phone {
+      width: 45%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+};
+
+.fullScreen {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0, 0.95);
+  z-index: 12;
+  width: 100vw;
+  height: 100vh;
+
+  button,
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  };
+
+  img {
+    top: 50%;
+  };
+
+  button {
+    cursor: pointer;
+    bottom: 20%;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+}

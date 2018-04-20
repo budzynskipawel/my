@@ -1,0 +1,15 @@
+.tooltip{
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+};
+
+.show{
+  position: absolute;
+  bottom: 1rem;
+  display: block;
+  background-color: white;
+  color: black;
+  border: solid black 1px;
+  z-index: 1;
+}
